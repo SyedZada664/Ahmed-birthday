@@ -1,5 +1,5 @@
 /* ---------- EDIT THIS ---------- */
-const CFG={name:'Ahmed',photos:[ 'images/img 1.jpg','images/img 2.jpg','images/img 3.jpg','images/img 4.jpg' ],from:'Someone who adores you',captions:['Chapter 1: The legend begins','Chapter 2: Questionable haircut era','Chapter 3: Peak main character','Chapter 4: This year’s plot twist']};
+const CFG={name:'Ahmed',photos:[ 'img 1.jpg','img 2.jpg','img 3.jpg','img 4.jpg' ],from:'Someone who adores you',captions:['Chapter 1: The legend begins','Chapter 2: Questionable haircut era','Chapter 3: Peak main character','Chapter 4: This year’s plot twist']};
 /* ------------------------------- */
 const $=id=>document.getElementById(id),rnd=(a,b)=>a+Math.random()*(b-a);
 const COLS=['#ff5d8f','#ffb938','#4fd1c5','#9d7bff','#ff7a59'],BCOL=['#e63e78','#f2a01f','#17a99b','#7a56ee','#f2603f'];
