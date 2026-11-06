@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg"></div>
+<canvas id="gl"></canvas>
+<div id="deco"></div>
+
+<section class="st" id="uI">
+  <p class="sub" id="iTop">A little surprise is waiting for you…</p>
+  <div id="heartBox">
+    <svg viewBox="0 0 200 180" aria-label="Happy Birthday">
+      <defs><radialGradient id="hg" cx="35%" cy="25%" r="85%"><stop offset="0" stop-color="#ff9ec0"/><stop offset=".55" stop-color="#f23a77"/><stop offset="1" stop-color="#a50f47"/></radialGradient></defs>
+      <path d="M100 170C22 110-6 54 28 24C52 3 88 10 100 38C112 10 148 3 172 24C206 54 178 110 100 170Z" fill="url(#hg)" stroke="#ffd36b" stroke-width="3"/>
+      <path d="M40 36C52 20 72 20 84 34" stroke="#fff" stroke-opacity=".55" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <g text-anchor="middle" font-family="Bagel Fat One,sans-serif" stroke="#7a0f3a" stroke-width="5" stroke-linejoin="round" style="paint-order:stroke">
+        <text x="100" y="74" font-size="24" fill="#fff">Happy</text>
+        <text x="100" y="100" font-size="22" fill="#fff">Birthday</text>
+        <text x="100" y="132" font-size="30" fill="#ffe9a8" id="htName">AHMED</text>
+      </g>
+      <circle cx="30" cy="70" r="3" fill="#ffe9a8"/><circle cx="172" cy="52" r="2.5" fill="#fff"/><circle cx="150" cy="98" r="2" fill="#ffe9a8"/>
+    </svg>
+  </div>
+  <svg id="bowSvg"></svg>
+  <span id="hand">👆</span>
+  <p id="iHint"></p>
+  <div id="iTxt"><p id="i1">Happy Birthday</p><div class="gname" id="iName"></div><p id="i2">🎉 Let’s celebrate! 🎉</p></div>
+</section>
+
+<section class="st" id="u0"><div class="bot"><div class="pop">Pop!</div><p class="sub">Tap every balloon · <b id="left">7</b> left</p></div></section>
+
+<section class="st" id="u2"><div class="top"><h1 id="cakeH"></h1></div><div class="bot"><p id="cakeS"></p></div></section>
+
+<section class="st" id="u5"><div class="bot"><div class="pop" style="font-size:clamp(2.6rem,12vw,4.2rem)">Party time!</div></div></section>
+
+<section class="st" id="u1"><h1>Our Best Moments</h1><div id="cards"></div><p class="sub cta" id="cnt"></p></section>
+
+<section class="st" id="uQ"><div class="panel qwrap"><div id="qdots"><span id="qn"></span><span id="qs"></span></div><h2 id="qq"></h2><div class="yn"><button class="b" id="bYes">Yes 💚</button><button class="b" id="bNo">No 🙈</button></div><p id="qr"></p></div></section>
+
+<section class="st" id="uR">
+  <div class="cur" id="curL"></div><div class="cur r" id="curR"></div>
+  <button id="rh" aria-label="Tap the heart"><svg viewBox="0 0 24 22"><path d="M12 21C-6 8 4-3 12 5C20-3 30 8 12 21Z" fill="#ff5d8f"/><path d="M6 6q2-3 4-1" stroke="#fff" stroke-opacity=".6" fill="none" stroke-width="1.2"/></svg></button>
+  <p class="sub" id="rHint">Tap the heart to open the curtain</p>
+  <div class="panel" id="msg">
+    <h2 id="hb"></h2>
+    <p class="ln">Today the world got a little brighter, and it’s because of you.</p>
+    <p class="ln">Thank you for the laughs, the chaos, and every quiet moment in between.</p>
+    <p class="ln">May this year be gentle with your heart and generous with your dreams. Never forget how loved you are.</p>
+    <div id="win" class="fin"><b>Gift unlocked</b>One free hug, redeemable anytime. No expiry, no returns.</div>
+    <p class="sig fin" id="sig"></p>
+    <button class="b fin" id="more">One last surprise ✦</button>
+  </div>
+</section>
+
+<section class="st" id="uE"><h1 style="font-size:clamp(2.2rem,9vw,3.6rem);margin-bottom:.4rem">Happy Birthday</h1><div class="gname" id="eName"></div><p class="sub" style="font-size:1.5rem;margin-top:1rem">The End ♥</p><button class="b" id="again">Replay</button></section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
